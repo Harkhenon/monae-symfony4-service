@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * Author: Isoka
  * User: Isoka
  * Date: 28/01/2019
  * Time: 19:19
@@ -62,33 +62,33 @@ class MonAE {
 
     // Customer side
 
-    public function getListClient(){
+    public function getListCustomer(){
         return $this->monaeCurl("/customers.json", "GET");
     }
 
-    public function getUniqueClient($id){
+    public function getUniqueCustomer($id){
         return $this->monaeCurl("/customers/".$id.".json", "GET");
     }
 
-    public function createClient($jsonData){
+    public function createCustomer($jsonData){
         return $this->monaeCurl("/customers.json", "POST", json_encode($jsonData));
     }
 
-    public function updateClient($jsonData, $clientId){
+    public function updateCustomer($jsonData, $clientId){
         return $this->monaeCurl("/customers/".$clientId.".json", "PATCH", json_encode($jsonData));
     }
 
-    public function deleteClient($clientId){
+    public function deleteCustomer($clientId){
         return $this->monaeCurl("/customers/".$clientId.".json", "DELETE");
     }
 
-    public function getClientInvoices($clientId) {
+    public function getCustomerInvoices($clientId) {
         return $this->monaeCurl("/invoices.json?customer_id=".$clientId, "GET");
     }
 
     // Quote side
 
-    public function getQuoteByClient($clientId){
+    public function getQuoteByCustomer($clientId){
         return $this->monaeCurl("/customers/".$clientId."/quotes.json", "GET");
     }
 
