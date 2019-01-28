@@ -8,7 +8,7 @@ Il suffit de le charger comme tout service:
 ```php
 use App\Service\Monae;
 
-$monae = news Monae();
+$monae = new Monae();
 ```
 
 /!\ ATTENTION /!\
@@ -41,7 +41,7 @@ You juste need to load it like another service:
 ```php
 use App\Service\Monae;
 
-$monae = news Monae();
+$monae = new Monae();
 ```
 
 /!\ WARNING /!\
