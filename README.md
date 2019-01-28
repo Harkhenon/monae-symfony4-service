@@ -20,7 +20,7 @@ La liste des clés est ici => https://www.facturation.pro/api-webservice-factura
 La préparation est relativement simple, associez les clés correspondantes à vos résultats dans un array, faites un bon vieux:
 
 ```php
-$json = json_encode($votreVariable);
+$json = json_encode($votreArray);
 
 // Puis
 
@@ -54,9 +54,9 @@ Preparing is easy, you juste need to bind Monae keys to your results in an array
 
 
 ```php
-$json = json_encode($votreVariable);
+$json = json_encode($yourArray);
 
-// Puis
+// And
 
 $monae->createCustomer($json);
 ```
