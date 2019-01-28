@@ -36,7 +36,7 @@ $monae->createCustomer($json);
 
 This service for Symfony 4 will enable you to use Monae endpoint simply via easy2learn methods
 
-You juste need to charge it like another service:
+You juste need to load it like another service:
 
 ```php
 use App\Service\Monae;
