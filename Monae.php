@@ -9,7 +9,7 @@
 namespace App\Service;
 
 
-class MonAE {
+class Monae {
 
     protected $firmId = "";
     protected $apiKey = "";
