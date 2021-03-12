@@ -1,9 +1,7 @@
 <?php
 /**
- * Author: Isoka
- * User: Isoka
+ * Author: Harkhenon
  * Date: 28/01/2019
- * Time: 19:19
  */
 
 namespace App\Service;
